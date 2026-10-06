@@ -8,6 +8,10 @@
 
 `omarchy-windows` brings the legendary **Omarchy Linux** tiling desktop aesthetic, acrylic glass status bars, dynamic theme switcher, and modal keybindings directly to Windows 10 and 11.
 
+<p align="center">
+  <img src="assets/preview.jpg" alt="Omarchy Windows Desktop Preview" width="100%" />
+</p>
+
 ---
 
 ## ✨ Features
