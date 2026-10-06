@@ -1,0 +1,43 @@
+/* Omarchy Windows Status Bar (Yasb / Acrylic Style) */
+* {
+    font-family: 'JetBrains Mono', 'Segoe UI', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+window {
+    background-color: rgba(15, 23, 42, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.widget {
+    padding: 0 12px;
+    color: #f8fafc;
+}
+
+.workspace-button {
+    color: #94a3b8;
+    padding: 2px 8px;
+    margin: 0 2px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.workspace-button.active {
+    color: #7aa2f7;
+    background-color: rgba(122, 162, 247, 0.2);
+    border: 1px solid rgba(122, 162, 247, 0.4);
+}
+
+.cpu-widget {
+    color: #06b6d4;
+}
+
+.memory-widget {
+    color: #a855f7;
+}
+
+.clock-widget {
+    color: #10b981;
+    font-weight: 700;
+}

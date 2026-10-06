@@ -1,0 +1,85 @@
+# Omarchy for Windows - GlazeWM Configuration
+# Glass Acrylic Hyprland-Inspired Tiling Layout for Windows 10/11
+
+gaps:
+  inner_gap: "4px"
+  outer_gap: "8px"
+
+window_rules:
+  - command: "ignore"
+    match_process_name: "/^SystemSettings|Taskmgr|cmd|powershell$/"
+  - command: "set floating"
+    match_process_name: "/^Calc|SnippingTool|ControlPanel$/"
+
+borders:
+  active:
+    color: "#7aa2f7"
+    width: "2px"
+  inactive:
+    color: "#1a1b26"
+    width: "1px"
+
+workspaces:
+  - name: "1: 🌐 Web"
+  - name: "2: 💻 Code"
+  - name: "3: ⚡ Terminal"
+  - name: "4: 📂 Files"
+  - name: "5: 💬 Chat"
+  - name: "6: 🎵 Media"
+
+keybindings:
+  # Focus Movement (Vim direction keys)
+  - binding: "Alt+H"
+    command: "focus left"
+  - binding: "Alt+L"
+    command: "focus right"
+  - binding: "Alt+K"
+    command: "focus up"
+  - binding: "Alt+J"
+    command: "focus down"
+
+  # Window Movement
+  - binding: "Alt+Shift+H"
+    command: "move left"
+  - binding: "Alt+Shift+L"
+    command: "move right"
+  - binding: "Alt+Shift+K"
+    command: "move up"
+  - binding: "Alt+Shift+J"
+    command: "move down"
+
+  # Window Operations
+  - binding: "Alt+Shift+Q"
+    command: "close"
+  - binding: "Alt+Space"
+    command: "toggle floating"
+  - binding: "Alt+F"
+    command: "toggle fullscreen"
+
+  # Workspace Switching
+  - binding: "Alt+1"
+    command: "focus workspace 1"
+  - binding: "Alt+2"
+    command: "focus workspace 2"
+  - binding: "Alt+3"
+    command: "focus workspace 3"
+  - binding: "Alt+4"
+    command: "focus workspace 4"
+  - binding: "Alt+5"
+    command: "focus workspace 5"
+  - binding: "Alt+6"
+    command: "focus workspace 6"
+
+  # Move Window to Workspace
+  - binding: "Alt+Shift+1"
+    command: "move to workspace 1"
+  - binding: "Alt+Shift+2"
+    command: "move to workspace 2"
+  - binding: "Alt+Shift+3"
+    command: "move to workspace 3"
+  - binding: "Alt+Shift+4"
+    command: "move to workspace 4"
+
+  # Launchers
+  - binding: "Alt+Enter"
+    command: "exec wt.exe"
